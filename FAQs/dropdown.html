@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="Fonts-6/css/all.css">
+
+  <script src="dropdown.js"></script>
+</head>
+
+<body style="height: 3000px;">
+  <div style="display: flex; flex-direction: column; margin: auto; align-items: center; justify-content: center;">
+
+    <div style="background-color: white; padding: 30px; border-radius: 5px; box-shadow: 5px 3px 20px 0px rgba(0, 0, 0, 0.3); margin-top: 40px;">
+      <div style="display: flex; align-items: center;">
+        <span style="color: plum;"><i class="fa-solid fa-star"></i></span>
+        <h1 style="margin-left: 15px; font-weight: bold; font-size: 30px;">FAQs</h1>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-top: 20px; padding: 15px 15px; border-radius: 5px; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3); overflow: hidden; white-space: nowwrap; max-width: 450px;">
+
+        <div style="display: flex; justify-content: space-between;">
+          <b style="text-wrap: nowrap;">what is Frontend Mentor, and how will it help me?</b>
+          <div class="js-plus" style="margin-left: 20px; position: relative; cursor: pointer;" onclick="showContent();">
+            <span style="color: plum;"><i class="fa-solid fa-circle-plus"></i></span>
+          </div>
+          <div class="js-minus" style="position: absolute; right: 329.5px; display: none; cursor: pointer;" onclick="closeContent();">
+            <span style="color: rgb(93, 66, 93);"><i class="fa-solid fa-circle-minus"></i></span>
+          </div>
+        </div>
+    
+        <div class="js-content" style="padding-top: 10px; display: none;">
+          <p>
+            Frontend Mentor is a platform that provides web development
+            challenges and projects to help you improve your frontend 
+            coding skills. It offers a range of projects with varying 
+            levels of complexity, allowing you to practice HTML, CSS, 
+            and JavaScript while building real-world projects.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-top: 10px; padding: 15px 15px; border-radius: 5px; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3); overflow: hidden; white-space: nowwrap; max-width: 450px;">
+
+        <div style="display: flex; justify-content: space-between;">
+          <b style="text-wrap: nowrap;">Is Frontend Mentor free?</b>
+          <div class="js-secondPlus" style="margin-left: 20px; position: relative; cursor: pointer;" onclick="secondShowContent();">
+            <span style="color: plum;"><i class="fa-solid fa-circle-plus"></i></span>
+          </div>
+          <div class="js-secondMinus" style="position: absolute; right: 329.5px; display: none; cursor: pointer;" onclick="secondCloseContent();">
+            <span style="color: rgb(93, 66, 93);"><i class="fa-solid fa-circle-minus"></i></span>
+          </div>
+        </div>
+    
+        <div class="js-secondContent" style="padding-top: 10px; display: none;">
+          <p>
+            Yes, Frontend Mentor offers both free and premium plans. The free plan provides access to a variety of frontend development challenges, allowing you to practice your skills and receive feedback on your solutions. This includes projects ranging from beginner to advanced levels, covering HTML, CSS, and JavaScript.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-top: 10px; padding: 15px 15px; border-radius: 5px; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3); overflow: hidden; white-space: nowwrap; max-width: 450px;">
+
+        <div style="display: flex;">
+          <b style="text-wrap: nowrap;">Can I use Frontend Mentor projects in my portfolio</b>
+          <div class="js-thirdPlus" style="margin-left: 20px; position: relative; cursor: pointer;" onclick="thirdShowContent();">
+            <span style="color: plum;"><i class="fa-solid fa-circle-plus"></i></span>
+          </div>
+          <div class="js-thirdMinus" style="position: absolute; right: 329.5px; display: none; cursor: pointer;" onclick="thirdCloseContent();">
+            <span style="color:  rgb(93, 66, 93);"><i class="fa-solid fa-circle-minus"></i></span>
+          </div>
+        </div>
+    
+        <div class="js-thirdContent" style="padding-top: 10px; display: none;">
+          <p>
+            Yes, you can use Frontend Mentor projects in your portfolio. In fact, it's a great idea to showcase the projects you've completed on Frontend Mentor as part of your portfolio, especially if you're just starting out in frontend development or looking to enhance your portfolio with real-world examples.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-top: 10px; padding: 15px 15px; border-radius: 5px; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3); overflow: hidden; white-space: nowwrap; max-width: 450px;">
+
+        <div style="display: flex; justify-content: space-between;">
+          <b style="text-wrap: nowrap;">How can i get help if i'm stuck on a challange?</b>
+          <div class="js-fourthPlus" style="margin-left: 20px; position: relative; cursor: pointer;" onclick="fourthShowContent();">
+            <span style="color: plum;"><i class="fa-solid fa-circle-plus"></i></span>
+          </div>
+          <div class="js-fourthMinus" style="position: absolute; right: 329.5px; display: none; cursor: pointer;" onclick="fourthCloseContent();">
+            <span style="color:  rgb(93, 66, 93);"><i class="fa-solid fa-circle-minus"></i></span>
+          </div>
+        </div>
+    
+        <div class="js-fourthContent" style="padding-top: 10px; display: none;">
+          <p>
+            If you're stuck on a challenge on Frontend Mentor, there are several ways you can seek help:
+
+            Check the Resources: Frontend Mentor often provides resources, such as starter files, design assets, and guidelines, to help you get started on a challenge. Review these resources carefully to ensure you understand the requirements and expectations.
+            Read the Community Discussions: Frontend Mentor has a community forum or discussion board where you can find threads related to specific challenges. Browse through these discussions to see if others have encountered similar issues or have shared helpful tips and solutions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+   
+  </div>
+</body>
+
+</html>
